@@ -1,6 +1,7 @@
 const textInput = document.getElementById("text-input");
 const checkBtn = document.getElementById("check-btn");
 const output = document.getElementById("result");
+const helpIcon = document.getElementById("help");
 
 function cleanInputString(str) {
     const regex = /[_\s\W]/g;
@@ -28,5 +29,7 @@ function checkPalindrome(){
     output.classList.remove('hide');
 }
 
+helpIcon.addEventListener("click",()=>
+alert("A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing."));
 
 checkBtn.addEventListener("click",checkPalindrome);

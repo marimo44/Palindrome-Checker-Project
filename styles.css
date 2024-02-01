@@ -22,6 +22,31 @@ body{
     font-family: "Press Start 2P", serif;
 }
 
+
+#help-div{
+    display: flex;
+    justify-content: end; 
+    height: 8vh;
+    border: none;
+}
+
+#help{
+    border: none;
+    background-color: inherit;
+    height: fit-content;
+    width: fit-content;
+}
+
+svg{
+    height: 90%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+svg:hover{
+    cursor: pointer;
+}
+
 #title{
     height: 40vh;
     display: flex;
@@ -54,7 +79,7 @@ input{
     margin-top: 10vh;
 }
 
-button{
+#check-btn{
     font-family: inherit;
     width: 11rem;
     height: 4rem;
@@ -64,7 +89,7 @@ button{
     margin-top: 3vh;
 }
 
-button:hover{
+#check-btn:hover{
     background: var(--black);
     color: var(--red);
     border: none;
@@ -76,6 +101,8 @@ button:hover{
     text-align: center;
     color: var(--black);
     margin-top: 5vh;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .hide{
