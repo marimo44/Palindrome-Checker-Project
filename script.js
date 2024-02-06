@@ -29,7 +29,9 @@ function checkPalindrome(){
     output.classList.remove('hide');
 }
 
-helpIcon.addEventListener("click",()=>
-alert("A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing."));
+helpIcon.addEventListener("click",()=>{
+alert("A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.")
+return;
+});
 
 checkBtn.addEventListener("click",checkPalindrome);
